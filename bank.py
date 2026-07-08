@@ -10,6 +10,8 @@ class bank:
         self.depositCash+=self.depositCash
     def withdrawCash(self):
         self.withdrawCash=input("Enter the amount withdrawn\n")
-        self.withdrawCash+=self.withdrawCash
-    
+        self.bankBalance-=self.withdrawCash
+    def checkBalance(self):
+        print(f"Enter the back balance of\t{self.accNo}:{self.name} is {self.bankBalance}")
+        
         
