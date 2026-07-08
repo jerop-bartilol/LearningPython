@@ -1,0 +1,12 @@
+book={
+    "ISBNO":1234,
+    "title":"childs-play",
+    "author":"Joy",
+    "Publisher":"Standard",
+    "datePublished":"03-10"
+}
+book["Volume"]="20L"
+print(book)
+book.pop("Volume")
+print(book)
+print(book.keys())
