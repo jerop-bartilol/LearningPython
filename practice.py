@@ -1,9 +1,9 @@
 basicSalary=float(input("Enter the basic salary\n"))
 overTime=float(input("Enter Over time\n"))
 if overTime >0 or overTime<50:
-    print(f"{overTime}*300")
+    overTime=overTime*300
 else:
-    print(f"{overTime}*350")
+    overTime=overTime*350
 grossPay= basicSalary+overTime
 #Calculalting PAYE
 if grossPay>=1 and grossPay<=30000:
@@ -22,7 +22,7 @@ sha=0.027*grossPay
 housingLevy=0.015*grossPay
 
 #Calculating Net Pay
-netPay=grossPay -[paye+nssf+sha+housingLevy]
+netPay=grossPay-(paye+nssf+sha+housingLevy)
 #Output
 print(f"Gross Pay\t{grossPay}\n")
 print(f"P.A.Y.E is\t{paye}\n")
