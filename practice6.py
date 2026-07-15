@@ -1,3 +1,5 @@
+
+#Creating A class
 class buy:
     def __init__(self):
         self.pName=""
